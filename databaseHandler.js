@@ -1,6 +1,6 @@
 const { ObjectId } = require('bson')
 var MongoClient = require('mongodb').MongoClient
-var url = 'mongodb+srv://Mint1010:Vanh1010@cluster0.c5kutjt.mongodb.net/?retryWrites=true&w=majority'
+var url = 'mongodb+srv://Mint1010:vanh1608@cluster0.c5kutjt.mongodb.net/?retryWrites=true&w=majority'
 
 
 async function getDB() {
