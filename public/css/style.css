@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    width: 100%;
+    padding: -10 0;
+    text-align: center;
+}
+
+nav ul {
+    background: #000;
+    width: 100%;
+    margin-top: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px 30px;
+    color: #fff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(172, 161, 161, 0.582);
+    position: relative;
+    padding: 0 0;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    background-color: #dbff3b;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul li a:hover:after {
+    width: 100%;
+}
+
+.bg-img {
+    /* The image used */
+    background-image: url("https://wallpapers.com/images/hd/genshin-impact-barbara-and-clouds-x7rzvqymepbkk1fw.jpg");
+    min-height: 681px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+    margin-top: -16px;
+}
+
+h1{
+    text-align: center;
+}
