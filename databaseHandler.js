@@ -32,10 +32,10 @@ async function findProductById(id) {
     return productToEdit
 }
 
-async function updateProduct(id, name, price, picUrl) {
+async function updateProduct(id, name, price, picUrl, quantity) {
     let db = await getDB()
     await db.collection("products").updateOne({ _id: ObjectId(id) },
-        { $set: { "name": name, "price": price, "picture": picUrl } })
+        { $set: { "name": name, "price": price, "picture": picUrl, "quantity": quantity } })
 }
 
 module.exports = {insertNewProduct, getAllProducts, deleteProductById, findProductById, updateProduct}

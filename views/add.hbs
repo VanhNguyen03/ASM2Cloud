@@ -17,7 +17,9 @@
             <form action="/new" method="post" class="container">
                 <div class="form-group">
                     <label>Product Name</label>
-                    <input type="text" class="form-control" name="txtProductName" required />
+                    <input type="text" class="form-control" name="txtProductName" required /> {{#if alert}}
+                    <span style="color: red">Name must have at least 5 to 20 characters</span>
+                    {{/if}}
                 </div>
                 <div class="form-group">
                     <label>Product Price</label>
@@ -25,7 +27,13 @@
                 </div>
                 <div class="form-group">
                     <label for="url">Product URL</label>
-                    <input type="url" class="form-control" name="txtProductPic" required />
+                    <input type="url" class="form-control" name="txtProductPic" required /> {{#if alert}}
+                     <span style="color: red">NOT for JPG</span>
+                    {{/if}}
+                </div>
+                <div class="form-group">
+                    <label>Product Quantity</label>
+                    <input type="number" class="form-control" name="txtProductQuantity" min="0" required />
                 </div>
                 <br />
                 <button type="submit" class="btn btn-primary">Submit</button>
